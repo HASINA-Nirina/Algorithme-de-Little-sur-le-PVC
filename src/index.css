@@ -1,0 +1,83 @@
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@400;500;600&display=swap');
+
+/* ── Variables : mode clair ── */
+:root {
+  --font-cursive: cursive;
+  --font-sans:    cursive;
+
+  --bg-page:      #f8f8f8;
+  --bg-card:      #ffffff;
+  --bg-input:     #ffffff;
+  --bg-btn:       #4f46e5;
+  --bg-btn-hover: #4338ca;
+  --bg-step-done: #4f46e5;
+  --bg-step-todo: #e5e7eb;
+
+  --text-main:    #111827;
+  --text-muted:   #6b7280;
+  --text-btn:     #ffffff;
+  --text-title:   #4f46e5;
+
+  --border:       #e5e7eb;
+  --border-focus: #4f46e5;
+
+  --radius:       10px;
+  --radius-sm:    6px;
+}
+
+/* ── Variables : mode sombre ── */
+[data-theme="dark"] {
+  --bg-page:      #0f0f0f;
+  --bg-card:      #1a1a1a;
+  --bg-input:     #242424;
+  --bg-btn:       #818cf8;
+  --bg-btn-hover: #6366f1;
+  --bg-step-done: #818cf8;
+  --bg-step-todo: #2d2d2d;
+
+  --text-main:    #f3f4f6;
+  --text-muted:   #9ca3af;
+  --text-btn:     #0f0f0f;
+  --text-title:   #818cf8;
+
+  --border:       #2d2d2d;
+  --border-focus: #818cf8;
+}
+
+/* ── Reset de base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-cursive);
+  color: var(--text-title);
+}
+
+input, textarea, select {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  background: var(--bg-input);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  width: 100%;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--border-focus);
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
