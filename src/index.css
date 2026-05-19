@@ -3,8 +3,8 @@
 
 /* ── Variables : mode clair ── */
 :root {
-  --font-cursive: cursive;
-  --font-sans:    cursive;
+  --font-cursive: Segoe UI;
+  --font-sans:    Segoe UI;
 
   --bg-page:      #f8f8f8;
   --bg-card:      #ffffff;
